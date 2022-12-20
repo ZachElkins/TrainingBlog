@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$bg: hsl(217, 26, 95);
+$bg-2: hsl(217, 26, 90);
+$bg-2-hover: hsl(217, 26, 86);
+$text-main: 'Roboto', sans-serif;
+$accent: rgb(150, 189, 255);
+
+* {
+  font-family:  $text-main;
+}
+
+#searchbar {
+  display: none;
+}
+
+.header {
+  border-bottom: 2px solid $accent;
+}
+
+.page {
+  background-color: $bg;
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.header {
+  background-color: $bg-2;
+  padding: 2em;
+}
+
+#searchbar {
+  margin: 2em;
+}
+
+.entry-row {
+  // border: 2px solid $bg-2;
+  border-radius: 0.25em;
+  padding: 0.75em;
+  margin: 1em;
+  transition: background-color 0.25s;
+  transition: color 0.2s;
+  text-align: left;
+  background-color: $bg-2;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $bg-2-hover;
+    // color: $accent;
+  }
+}
+
+.entry-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+}
