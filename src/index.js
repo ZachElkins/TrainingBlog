@@ -23,7 +23,9 @@ const router = createHashRouter([
     path: "about",
     element: <About />
   }
-]);
+], {
+  basename: '/'
+});
 
 root.render(
   <React.StrictMode>
